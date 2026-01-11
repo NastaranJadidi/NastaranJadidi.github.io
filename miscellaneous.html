@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Miscellaneous - Nastaran Jadidi</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
+                   Roboto, Helvetica, Arial, sans-serif;
+      background-color: #ffffff;
+      color: #222;
+      line-height: 1.6;
+    }
+    
+    /* ---------- Header with Name ---------- */
+    header {
+      padding: 40px 24px 20px;
+      border-bottom: 1px solid #ddd;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    
+    .name {
+      font-family: 'Brush Script MT', cursive, sans-serif;
+      font-size: 3rem;
+      color: #555;
+      font-weight: normal;
+      margin: 0;
+    }
+    
+    /* ---------- Navigation ---------- */
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      gap: 32px;
+    }
+    
+    nav a {
+      text-decoration: none;
+      color: #0095dd;
+      font-weight: 500;
+      font-size: 1rem;
+    }
+    
+    nav a:hover {
+      text-decoration: underline;
+    }
+    
+    /* ---------- Main content ---------- */
+    .container {
+      max-width: 1200px;
+      margin: 60px auto;
+      padding: 0 40px;
+    }
+    
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 40px;
+      font-weight: 600;
+      text-align: left;
+    }
+    
+    /* ---------- Photo Gallery ---------- */
+    .photo-gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 40px;
+      margin-bottom: 60px;
+    }
+    
+    .photo-item {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+    
+    .photo-item img {
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+    
+    .photo-item img:hover {
+      transform: scale(1.02);
+    }
+    
+    .photo-caption {
+      font-size: 1rem;
+      color: #555;
+      text-align: center;
+      font-style: italic;
+    }
+    
+    /* ---------- Responsive ---------- */
+    @media (max-width: 900px) {
+      .name {
+        font-size: 2.5rem;
+      }
+      
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+      }
+      
+      .photo-gallery {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 30px;
+      }
+    }
+    
+    @media (max-width: 600px) {
+      nav ul {
+        gap: 18px;
+        flex-wrap: wrap;
+      }
+      
+      .name {
+        font-size: 2rem;
+      }
+      
+      h1 {
+        font-size: 2rem;
+      }
+      
+      .photo-gallery {
+        grid-template-columns: 1fr;
+        gap: 30px;
+      }
+      
+      .photo-item img {
+        height: 250px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Header with name and navigation -->
+  <header>
+    <h1 class="name">Nastaran Jadidi</h1>
+    <nav>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/projects.html">Projects</a></li>
+        <li><a href="/publications.html">Publications</a></li>
+        <li><a href="/awards.html">Awards</a></li>
+        <li><a href="/miscellaneous.html">Miscellaneous</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <!-- Main content -->
+  <div class="container">
+    <h1>Miscellaneous</h1>
+    
+    <div class="photo-gallery">
+      <!-- Photo 1 -->
+      <div class="photo-item">
+        <img src="photo1.jpg" alt="Description of photo 1" />
+        <p class="photo-caption">Your caption for photo 1 goes here</p>
+      </div>
+      
+      <!-- Photo 2 -->
+      <div class="photo-item">
+        <img src="photo2.jpg" alt="Description of photo 2" />
+        <p class="photo-caption">Your caption for photo 2 goes here</p>
+      </div>
+      
+      <!-- Photo 3 -->
+      <div class="photo-item">
+        <img src="photo3.jpg" alt="Description of photo 3" />
+        <p class="photo-caption">Your caption for photo 3 goes here</p>
+      </div>
+      
+      <!-- Photo 4 -->
+      <div class="photo-item">
+        <img src="photo4.jpg" alt="Description of photo 4" />
+        <p class="photo-caption">Your caption for photo 4 goes here</p>
+      </div>
+      
+      <!-- Photo 5 -->
+      <div class="photo-item">
+        <img src="photo5.jpg" alt="Description of photo 5" />
+        <p class="photo-caption">Your caption for photo 5 goes here</p>
+      </div>
+      
+      <!-- Photo 6 -->
+      <div class="photo-item">
+        <img src="photo6.jpg" alt="Description of photo 6" />
+        <p class="photo-caption">Your caption for photo 6 goes here</p>
+      </div>
+      
+      <!-- Add more photo items as needed -->
+    </div>
+  </div>
+</body>
+</html>
