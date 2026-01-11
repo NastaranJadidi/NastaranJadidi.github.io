@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Publications - Nastaran Jadidi</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
+                   Roboto, Helvetica, Arial, sans-serif;
+      background-color: #f9f9f9;
+      color: #222;
+      line-height: 1.6;
+    }
+    /* ---------- Sticky Navigation ---------- */
+    nav {
+      position: sticky;
+      top: 0;
+      background-color: #ffffff;
+      border-bottom: 1px solid #ddd;
+      padding: 16px 24px;
+      z-index: 1000;
+      display: flex;
+      justify-content: flex-end;
+    }
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      gap: 32px;
+    }
+    nav a {
+      text-decoration: none;
+      color: #222;
+      font-weight: 500;
+      font-size: 0.95rem;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    /* ---------- Main content ---------- */
+    .container {
+      max-width: 900px;
+      margin: 60px auto;
+      padding: 0 20px;
+    }
+    h1 {
+      font-size: 2.4rem;
+      margin-bottom: 40px;
+      text-align: center;
+    }
+    .publication {
+      margin-bottom: 28px;
+      padding: 20px;
+      background-color: #ffffff;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    }
+    .publication h3 {
+      margin: 0 0 8px 0;
+      font-size: 1.15rem;
+      font-weight: 600;
+      color: #222;
+    }
+    .publication .authors {
+      font-size: 0.95rem;
+      color: #555;
+      margin-bottom: 4px;
+    }
+    .publication .venue {
+      font-size: 0.9rem;
+      color: #666;
+      font-style: italic;
+    }
+    .publication .year {
+      font-size: 0.9rem;
+      color: #888;
+      margin-top: 4px;
+    }
+    @media (max-width: 600px) {
+      nav ul {
+        gap: 18px;
+      }
+      h1 {
+        font-size: 2rem;
+      }
+      .publication h3 {
+        font-size: 1.05rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Sticky Navigation bar -->
+  <nav>
+    <ul>
+      <li><a href="/">Home</a></li>
+      <li><a href="/projects.html">Projects</a></li>
+      <li><a href="/publications.html">Publications</a></li>
+      <li><a href="/awards.html">Awards</a></li>
+    </ul>
+  </nav>
+  <!-- Main content -->
+  <div class="container">
+    <h1>Publications</h1>
+    
+    <div class="publication">
+      <h3>Rhetoric and linguistic strategies in an online advocacy movement</h3>
+      <div class="authors">N Jadidi, V Pandey</div>
+      <div class="venue">Proceedings of the Collective Intelligence Conference (CI 2025)</div>
+      <div class="year">2025</div>
+    </div>
+    
+    <div class="publication">
+      <h3>Left to their own devices: How people with ALS use digital platforms as advocacy space</h3>
+      <div class="authors">C Atwell, N Jadidi, V Pandey</div>
+      <div class="venue">Proceedings of the 27th International ACM SIGACCESS Conference on Computers and Accessibility</div>
+      <div class="year">2025</div>
+    </div>
+    
+    <div class="publication">
+      <h3>Teaching Critical Visualization: A Field Report</h3>
+      <div class="authors">A McNutt, S He, SK Kamaraj, P Bambroo, N Jadidi, J Bovard, C Han</div>
+      <div class="venue">arXiv preprint arXiv:2508.02592</div>
+      <div class="year">2025</div>
+    </div>
+    
+    <div class="publication">
+      <h3>A survey of cyber-physical systems applications (2017–2022)</h3>
+      <div class="authors">N Jadidi, M Varmazyar</div>
+      <div class="venue">Handbook of Smart Energy Systems</div>
+      <div class="year">2022</div>
+    </div>
+  </div>
+</body>
+</html>
