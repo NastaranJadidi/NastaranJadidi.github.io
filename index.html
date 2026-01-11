@@ -9,21 +9,29 @@
       margin: 0;
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
                    Roboto, Helvetica, Arial, sans-serif;
-      background-color: #f9f9f9;
+      background-color: #ffffff;
       color: #222;
       line-height: 1.6;
     }
-    /* ---------- Sticky Navigation ---------- */
-    nav {
-      position: sticky;
-      top: 0;
-      background-color: #ffffff;
+    
+    /* ---------- Header with Name ---------- */
+    header {
+      padding: 40px 24px 20px;
       border-bottom: 1px solid #ddd;
-      padding: 16px 24px;
-      z-index: 1000;
       display: flex;
-      justify-content: flex-end;
+      justify-content: space-between;
+      align-items: center;
     }
+    
+    .name {
+      font-family: 'Brush Script MT', cursive, sans-serif;
+      font-size: 3rem;
+      color: #555;
+      font-weight: normal;
+      margin: 0;
+    }
+    
+    /* ---------- Navigation ---------- */
     nav ul {
       list-style: none;
       margin: 0;
@@ -31,76 +39,149 @@
       display: flex;
       gap: 32px;
     }
+    
     nav a {
       text-decoration: none;
-      color: #222;
+      color: #0095dd;
       font-weight: 500;
-      font-size: 0.95rem;
+      font-size: 1rem;
     }
+    
     nav a:hover {
       text-decoration: underline;
     }
+    
     /* ---------- Main content ---------- */
     .container {
-      max-width: 800px;
+      max-width: 1200px;
       margin: 60px auto;
-      padding: 0 20px;
-      text-align: center;
+      padding: 0 40px;
     }
+    
+    .about-section {
+      display: grid;
+      grid-template-columns: 350px 1fr;
+      gap: 60px;
+      align-items: start;
+    }
+    
     img.profile {
-      width: 600px;
-      height: 600px;
+      width: 100%;
+      height: auto;
       object-fit: cover;
-      border-radius: 0;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    
+    .about-content h1 {
+      font-size: 2.5rem;
       margin-bottom: 24px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+      font-weight: 600;
     }
-    h1 {
-      font-size: 2.4rem;
-      margin-bottom: 12px;
-    }
-    p {
+    
+    .about-content p {
       font-size: 1.05rem;
       text-align: left;
+      margin-bottom: 16px;
+      color: #333;
     }
+    
+    .contact {
+      margin-top: 24px;
+    }
+    
+    .contact p {
+      margin: 8px 0;
+    }
+    
+    .contact a {
+      color: #0095dd;
+      text-decoration: none;
+    }
+    
+    .contact a:hover {
+      text-decoration: underline;
+    }
+    
+    /* ---------- Responsive ---------- */
+    @media (max-width: 900px) {
+      .about-section {
+        grid-template-columns: 1fr;
+        gap: 40px;
+      }
+      
+      img.profile {
+        max-width: 350px;
+        margin: 0 auto;
+        display: block;
+      }
+      
+      .name {
+        font-size: 2.5rem;
+      }
+      
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+      }
+    }
+    
     @media (max-width: 600px) {
       nav ul {
         gap: 18px;
       }
-      img.profile {
-        width: 250px !important;
-        height: 250px !important;
-      }
-      h1 {
+      
+      .name {
         font-size: 2rem;
       }
-      p {
+      
+      .about-content h1 {
+        font-size: 2rem;
+      }
+      
+      .about-content p {
         font-size: 1rem;
       }
     }
   </style>
 </head>
 <body>
-  <!-- Sticky Navigation bar -->
-  <nav>
-    <ul>
-      <li><a href="/">Home</a></li>
-      <li><a href="/projects.html">Projects</a></li>
-      <li><a href="/publications.html">Publications</a></li>
-      <li><a href="/awards.html">Awards</a></li>
-    </ul>
-  </nav>
+  <!-- Header with name and navigation -->
+  <header>
+    <h1 class="name">Nastaran Jadidi</h1>
+    <nav>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/projects.html">Projects</a></li>
+        <li><a href="/publications.html">Publications</a></li>
+        <li><a href="/awards.html">Awards</a></li>
+      </ul>
+    </nav>
+  </header>
+  
   <!-- Main content -->
   <div class="container">
-    <img src="Pic-Job.png" alt="Photo of Nastaran Jadidi" class="profile" />
-    <h1>Hello, I'm Nastaran</h1>
-    <p>
-
-
-I'm a third-year PhD student in Human-Centered Computing at the University of Utah. My research focuses on sociotechnical systems, particularly how technology, institutions, and human values intersect in high-stakes contexts. I study how affected communities engage with complex technical and policy infrastructures on online platforms, and explore how these systems can be redesigned to better support meaningful participation and collective decision-making. Using qualitative and computational methods, I work to understand and reimagine how expertise, lived experience, and power are negotiated in contemporary digital environments.
-
-Outside of research, I love reading, painting, and everything snow-related—especially snow sports!
-    </p>
+    <div class="about-section">
+      <div>
+        <img src="Pic-Job.png" alt="Photo of Nastaran Jadidi" class="profile" />
+      </div>
+      
+      <div class="about-content">
+        <h1>About Me</h1>
+        <p>
+          I'm a third-year PhD student in Human-Centered Computing at the University of Utah. My research focuses on sociotechnical systems, particularly how technology, institutions, and human values intersect in high-stakes contexts. I study how affected communities engage with complex technical and policy infrastructures on online platforms, and explore how these systems can be redesigned to better support meaningful participation and collective decision-making. Using qualitative and computational methods, I work to understand and reimagine how expertise, lived experience, and power are negotiated in contemporary digital environments.
+        </p>
+        <p>
+          Outside of research, I love reading, painting, and everything snow-related—especially snow sports!
+        </p>
+        
+        <div class="contact">
+          <p><strong>Email:</strong> <a href="mailto:your.email@utah.edu">your.email@utah.edu</a></p>
+          <p><strong>CV:</strong> <a href="cv.pdf">PDF</a></p>
+        </div>
+      </div>
+    </div>
   </div>
 </body>
 </html>
