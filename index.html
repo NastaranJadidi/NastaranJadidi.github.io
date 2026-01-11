@@ -4,7 +4,6 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Nastaran Jadidi</title>
-
   <style>
     body {
       margin: 0;
@@ -14,7 +13,6 @@
       color: #222;
       line-height: 1.6;
     }
-
     /* ---------- Sticky Navigation ---------- */
     nav {
       position: sticky;
@@ -24,9 +22,8 @@
       padding: 16px 24px;
       z-index: 1000;
       display: flex;
-      justify-content: flex-end;
+      justify-content: flex-end; /* Move nav to the right */
     }
-
     nav ul {
       list-style: none;
       margin: 0;
@@ -34,18 +31,15 @@
       display: flex;
       gap: 32px;
     }
-
     nav a {
       text-decoration: none;
       color: #222;
       font-weight: 500;
       font-size: 0.95rem;
     }
-
     nav a:hover {
       text-decoration: underline;
     }
-
     /* ---------- Main content ---------- */
     .container {
       max-width: 800px;
@@ -53,50 +47,40 @@
       padding: 0 20px;
       text-align: center;
     }
-
     img.profile {
-      width: 300px;
-      height: 300px;
+      width: 350px;
+      height: 350px;
       object-fit: cover;
-      border-radius: 0; /* square */
-      margin-bottom: 32px;
-      box-shadow: 0 6px 18px rgba(0,0,0,0.18);
+      border-radius: 0;
+      margin-bottom: 24px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
     }
-
     h1 {
       font-size: 2.4rem;
       margin-bottom: 12px;
     }
-
     p {
       font-size: 1.05rem;
       text-align: left;
     }
-
-    /* ---------- Responsive ---------- */
     @media (max-width: 600px) {
       nav ul {
         gap: 18px;
       }
-
       img.profile {
-        width: 220px;
-        height: 220px;
+        width: 250px;
+        height: 250px;
       }
-
       h1 {
         font-size: 2rem;
       }
-
       p {
         font-size: 1rem;
       }
     }
   </style>
 </head>
-
 <body>
-
   <!-- Sticky Navigation bar -->
   <nav>
     <ul>
@@ -106,13 +90,10 @@
       <li><a href="/awards.html">Awards</a></li>
     </ul>
   </nav>
-
   <!-- Main content -->
   <div class="container">
     <img src="Pic-Job.png" alt="Photo of Nastaran Jadidi" class="profile" />
-
     <h1>Hello, I'm Nastaran</h1>
-
     <p>
       I am a PhD student interested in conducting research on sociotechnical
       systems, with a particular focus on how technology, institutions, and
@@ -125,6 +106,5 @@
       experience, and power are negotiated in contemporary digital systems.
     </p>
   </div>
-
 </body>
 </html>
