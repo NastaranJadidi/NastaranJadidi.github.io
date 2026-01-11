@@ -15,9 +15,37 @@
       line-height: 1.6;
     }
 
+    /* ---------- Navigation ---------- */
+    nav {
+      background-color: #ffffff;
+      border-bottom: 1px solid #ddd;
+      padding: 16px 0;
+    }
+
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      gap: 32px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #222;
+      font-weight: 500;
+      font-size: 0.95rem;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    /* ---------- Main content ---------- */
     .container {
       max-width: 800px;
-      margin: 80px auto;
+      margin: 60px auto;
       padding: 0 20px;
       text-align: center;
     }
@@ -42,6 +70,10 @@
     }
 
     @media (max-width: 600px) {
+      nav ul {
+        gap: 18px;
+      }
+
       h1 {
         font-size: 2rem;
       }
@@ -54,8 +86,19 @@
 </head>
 
 <body>
+
+  <!-- Navigation bar -->
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#publications">Publications</a></li>
+      <li><a href="#awards">Awards</a></li>
+    </ul>
+  </nav>
+
+  <!-- Main content -->
   <div class="container">
-    <!-- Replace profile.jpg with your actual image file -->
     <img src="Pic-Job.png" alt="Photo of Nastaran Jadidi" class="profile" />
 
     <h1>Hello, I’m Nastaran</h1>
@@ -66,4 +109,35 @@
       human values interact in high-stakes contexts. My work examines how
       affected communities—especially patient and advocacy groups—engage with
       complex technical and policy infrastructures, and how these systems can
-      be designed to better suppo
+      be designed to better support participation, accountability, and
+      collective decision-making. Through qualitative and computational
+      approaches, I aim to understand and reimagine how expertise, lived
+      experience, and power are negotiated in contemporary digital systems.
+    </p>
+  </div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
